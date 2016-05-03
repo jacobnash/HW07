@@ -1,0 +1,16 @@
+Jacob@nashbook:~/Documents/School/Spring_2016/ECE335/Homework/HW_7$ ./fork
+Parent not delayed
+Parent PID = 79998
+Parent reads: abcde
+Child PID = 0
+Child reads: fghij
+Jacob@nashbook:~/Documents/School/Spring_2016/ECE335/Homework/HW_7$ ./fork 1
+Parent delayed 1 second
+Parent PID = 80000
+Child PID = 0
+Child reads: abcde
+Parent reads: fghij
+
+The program just uses the sleep function, because, I am lazy, I guess I could have used wait, but I didn't the reaping is done standardly. I also have code that over rides the signal, that i hsould put in it may or may not be in there depending on how lazy i am in. I'll comment it, it's actually good code. I dont know if that is the right CPID, but that is okay, because I still handle it. 
+
+ 
